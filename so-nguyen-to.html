@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let n= prompt("Enter the number:");
+    let a=2;
+    let count = 0;
+    while (count<n) {
+        let flag=true;
+        for (let i=2;i<a;i++){
+            if (a%i==0){
+                flag=false;
+            }
+        }
+        if (flag){
+            document.write('Số nguyên tố:'+a+ "<br>");
+            count++;
+        }
+        a++;
+    }
+</script>
+</body>
+</html>
